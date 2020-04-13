@@ -191,6 +191,13 @@
             </list>
           </value>
         </entry>
+        <entry key="widget_extensions">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../_tools/flutter/.pub-cache/git/widget_extensions-69e412968c8e09d4f5c2f0ddb4faf86d500bca63/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="xml">
           <value>
             <list>
@@ -201,6 +208,7 @@
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../_tools/flutter/.pub-cache/git/widget_extensions-69e412968c8e09d4f5c2f0ddb4faf86d500bca63/lib" />
       <root url="file://$PROJECT_DIR$/../../../_tools/flutter/.pub-cache/hosted/pub.dartlang.org/archive-2.0.11/lib" />
       <root url="file://$PROJECT_DIR$/../../../_tools/flutter/.pub-cache/hosted/pub.dartlang.org/args-1.5.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../_tools/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.4.0/lib" />

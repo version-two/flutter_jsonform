@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_jsonform/flutter_jsonform.dart';
-import 'package:flutter_jsonform/src/elements/attributes/input_decoration_attribute.dart';
-import 'package:flutter_jsonform/src/elements/attributes/text_style_attribute.dart';
+import 'package:flutter_jsonform/src/extensions/input_decoration_attribute.dart';
+import 'package:flutter_jsonform/src/extensions/text_style_attribute.dart';
 import 'package:flutter_jsonform/src/elements/form_element.dart';
 
 enum TextFieldElementType {
@@ -62,7 +62,6 @@ class TextFieldElement extends FormElement {
   }
 
   Widget render() {
-    print(keyboardType);
     return TextFormField(
       initialValue: _valueHandler.getValue(_id),
       style: textStyle,
@@ -75,11 +74,5 @@ class TextFieldElement extends FormElement {
         _valueHandler.setValue(_id, value);
       },
     );
-  }
-
-  @override
-  setValue(newValue) {
-    // TODO: implement setValue
-    return null;
   }
 }

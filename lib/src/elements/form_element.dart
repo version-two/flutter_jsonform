@@ -1,5 +1,5 @@
-abstract class FormElement {
-  setValue(dynamic newValue);
+import 'package:flutter/material.dart';
 
-  //fromJson(Map<String, dynamic> definition);
+abstract class FormElement {
+  Widget render();
 }

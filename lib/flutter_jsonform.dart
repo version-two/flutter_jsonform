@@ -4,6 +4,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_jsonform/src/elements/textfield_element.dart';
+import 'package:flutter_jsonform/src/extensions/widget_extensions.dart';
 
 class FlutterJsonForm {
   final List<dynamic> jsonDefinition;
@@ -13,7 +14,7 @@ class FlutterJsonForm {
 
   FlutterJsonForm(this.jsonDefinition);
 
-  FlutterJsonForm.fromString(String jsonDefinitionString)
+  FlutterJsonForm.fromJsonString(String jsonDefinitionString)
       : jsonDefinition = json.decode(jsonDefinitionString);
 
   Widget render() {
@@ -28,7 +29,14 @@ class FlutterJsonForm {
   List<Widget> _prepare() {
     elements = new List<Widget>();
     jsonDefinition.forEach((value) {
-      elements.add(TextFieldElement.fromJson(value, _valueHandler).render());
+      Widget element = TextFieldElement.fromJson(value, _valueHandler).render();
+      Map<dynamic, dynamic> map = {
+        "top": 100.0,
+        "left": 50.0,
+        "right": 10.0,
+        "bottom": 0.0
+      };
+      elements.add(element.wrapWith(WrapType.padding, map));
     });
     return elements;
     //formWidgetTree = new FormWidgetTree();
@@ -59,7 +67,7 @@ class ValueHandler {
   }
 
   String toJson() {
-    print("Vals: "+_values.toString());
+    print("Vals: " + _values.toString());
     return jsonEncode(_values);
   }
 }

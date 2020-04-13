@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="506821aa-5891-4ba0-9ed1-0a3dfb1f7d19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/src/extensions/widget_extensions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/assets/form.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/assets/form.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_jsonform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_jsonform.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/elements/attributes/input_decoration_attribute.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/extensions/input_decoration_attribute.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/elements/attributes/paint_attribute.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/extensions/paint_attribute.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/elements/attributes/text_style_attribute.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/extensions/text_style_attribute.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/elements/form_element.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/elements/form_element.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/elements/textfield_element.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/elements/textfield_element.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +40,9 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_development\apps\_plugins\flutter_jsonform\lib\src\extensions" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_development\apps\_plugins\flutter_jsonform\lib\src\elements\attributes" />
     </key>
@@ -74,7 +83,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
     String definition = await loadJson();
     setState(() {
       _loading = false;
-      form = new FlutterJsonForm.fromString(definition);
+      form = new FlutterJsonForm.fromJsonString(definition);
     });
   }
 }
