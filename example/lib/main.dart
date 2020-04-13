@@ -23,6 +23,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        floatingActionButton: FloatingActionButton(onPressed: () {
+          print(form.result);
+        }),
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),

@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="506821aa-5891-4ba0-9ed1-0a3dfb1f7d19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/assets/form.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/elements/attributes/input_decoration_attribute.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/form.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_for_Android.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/example_lib_main_dart.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/sk/v2/packages/flutter_jsonform/FlutterJsonformPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/assets/form.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/assets/form.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_jsonform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_jsonform.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_jsonform.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_jsonform.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/flutter_jsonform_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_jsonform_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/elements/textfield_element.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/elements/textfield_element.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

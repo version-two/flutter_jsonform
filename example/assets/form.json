@@ -1,6 +1,8 @@
 [
     {
+      "id": "textField1",
       "type": "TextFieldElementType.text",
+      "_keyboard_type": "phone",
       "decoration": {
         "label": "TEST LABEL",
         "label_style": {
