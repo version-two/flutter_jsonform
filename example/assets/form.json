@@ -1,0 +1,11 @@
+[
+    {
+      "type": "TextFieldElementType.text",
+      "decoration": {
+        "label": "TEST LABEL",
+        "label_style": {
+          "color": "0xFFFF00FF"
+        }
+      }
+    }
+]
