@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_jsonform/flutter_jsonform.dart';
+import 'package:flutter_jsonform/src/elements/form_element.dart';
 import 'package:flutter_jsonform/src/extensions/input_decoration_attribute.dart';
 import 'package:flutter_jsonform/src/extensions/text_style_attribute.dart';
-import 'package:flutter_jsonform/src/elements/form_element.dart';
+import 'package:meta/meta.dart';
 
 enum TextFieldElementType {
   text,
@@ -15,20 +16,21 @@ enum TextFieldElementType {
 }
 
 class TextFieldElement extends FormElement {
-  final String _id;
-  final TextFieldElementType type;
-  final TextInputType keyboardType;
-  final TextStyle textStyle;
-  final InputDecoration inputDecoration;
-  final int maxLines;
-  final int maxLength;
-  final bool maxLengthEnforced;
-  final Function onChange;
-  final ValueHandler _valueHandler;
+  @required
+  String id;
+  TextFieldElementType type;
+  TextInputType keyboardType;
+  TextStyle textStyle;
+  InputDecoration inputDecoration;
+  int maxLines;
+  int maxLength;
+  bool maxLengthEnforced;
+  Function onChange;
+  ValueHandler valueHandler;
 
-  TextFieldElement(
-    this._id,
-    this._valueHandler, {
+  TextFieldElement({
+    this.id,
+    this.valueHandler,
     this.type,
     this.keyboardType,
     this.textStyle,
@@ -39,12 +41,16 @@ class TextFieldElement extends FormElement {
     this.onChange,
   });
 
-  factory TextFieldElement.fromJson(
+  @factory
+  TextFieldElement fromJson(
       Map<String, dynamic> jsonDefinition, ValueHandler valueHandler) {
-    return new TextFieldElement(jsonDefinition['id'], valueHandler,
+    return new TextFieldElement(
+        id: jsonDefinition['id'],
+        valueHandler: valueHandler,
         type: jsonDefinition.containsKey('type')
-            ? TextFieldElementType.values
-                .firstWhere((e) => e.toString() == jsonDefinition['type'])
+            ? TextFieldElementType.values.firstWhere((e) =>
+                e.toString() ==
+                "TextFieldElementType." + jsonDefinition['type'])
             : TextFieldElementType.text,
         keyboardType: jsonDefinition.containsKey('keyboard_type')
             ? TextInputType.values.firstWhere(
@@ -63,7 +69,7 @@ class TextFieldElement extends FormElement {
 
   Widget render() {
     return TextFormField(
-      initialValue: _valueHandler.getValue(_id),
+      initialValue: this.getValue(),
       style: textStyle,
       decoration: inputDecoration,
       keyboardType: keyboardType,
@@ -71,8 +77,12 @@ class TextFieldElement extends FormElement {
       maxLength: maxLength,
       maxLengthEnforced: maxLengthEnforced,
       onChanged: (value) {
-        _valueHandler.setValue(_id, value);
+        this.setValue(value);
       },
     );
+  }
+
+  bool isValid() {
+    return true;
   }
 }
