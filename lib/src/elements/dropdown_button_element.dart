@@ -5,10 +5,11 @@ import 'package:flutter_jsonform/src/elements/form_element.dart';
 class DropdownButtonElement extends FormElement {
   List<DropdownMenuItem<String>> _items;
 
-  DropdownButtonElement(String id, ValueHandler valueHandler, dynamic items)
-      : super(id, valueHandler) {
+  DropdownButtonElement(Map<String, dynamic> jsonDefinition, String id, ValueHandler valueHandler)
+      : super(jsonDefinition, id, valueHandler) {
+    dynamic items = jsonDefinition['items'];
     if (items is Map<String, String>) {
-      _items = List(items.length);  // Fixed-size list for better performance
+      _items = List(items.length); // Fixed-size list for better performance
 
       int index = 0;
       items.forEach((String key, String val) {
@@ -20,7 +21,7 @@ class DropdownButtonElement extends FormElement {
     } else {
       items = items as List<String>;
       final int len = items.length;
-      _items = List(len);  // Fixed-size list for better performance
+      _items = List(len); // Fixed-size list for better performance
 
       for (int i = 0; i < len; i++) {
         _items[i] = DropdownMenuItem(
@@ -32,10 +33,11 @@ class DropdownButtonElement extends FormElement {
   }
 
   DropdownButtonElement.fromJson(Map<String, dynamic> jsonDefinition, ValueHandler valueHandler)
-      : this(jsonDefinition['id'], valueHandler, jsonDefinition['items']);
+      : this(jsonDefinition, jsonDefinition['id'], valueHandler);
 
   Widget render() {
     return DropdownButton(
+      value: definition['label'].toString(),
       items: _items,
       onChanged: (String value) {
         valueHandler.setValue(id, value);

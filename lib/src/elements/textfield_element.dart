@@ -16,8 +16,8 @@ class TextFieldElement extends FormElement {
   final bool maxLengthEnforced;
   final Function onChange;
 
-
   TextFieldElement(
+    Map<String, dynamic> definition,
     String id,
     ValueHandler valueHandler, {
     this.type,
@@ -28,11 +28,11 @@ class TextFieldElement extends FormElement {
     this.maxLength,
     this.maxLengthEnforced,
     this.onChange,
-  }) : super(id, valueHandler);
+  }) : super(definition, id, valueHandler);
 
   factory TextFieldElement.fromJson(
       Map<String, dynamic> jsonDefinition, ValueHandler valueHandler) {
-    return new TextFieldElement(jsonDefinition['id'], valueHandler,
+    return new TextFieldElement(jsonDefinition, jsonDefinition['id'], valueHandler,
         type: jsonDefinition.containsKey('type')
             ? TextFieldElementType.values.firstWhere((e) => e.toString() == jsonDefinition['type'])
             : TextFieldElementType.text,
