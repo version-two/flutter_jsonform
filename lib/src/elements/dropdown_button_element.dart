@@ -36,7 +36,7 @@ class DropdownButtonElement extends FormElement {
       : this(jsonDefinition, jsonDefinition['id'], valueHandler);
 
   Widget render() {
-    return DropdownButton(
+    return DropdownButtonFormField(
       value: definition['label'].toString(),
       items: _items,
       onChanged: (String value) {
